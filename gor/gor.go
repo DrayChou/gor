@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"flag"
 	"github.com/wendal/gor"
+	//"gor"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -13,7 +14,7 @@ import (
 )
 
 const (
-	VER = "2.8.5"
+	VER = "2.8.6"
 )
 
 var (
@@ -48,8 +49,8 @@ func main() {
 		}
 		log.Println("global config\n", string(buf))
 	case "new":
-                fallthrough
-        case "init":
+		fallthrough
+	case "init":
 		if len(args) == 1 {
 			log.Fatalln(os.Args[0], "new", "<dir>")
 		}
