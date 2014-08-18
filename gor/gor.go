@@ -4,8 +4,8 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"flag"
-	"github.com/wendal/gor"
-	//"gor"
+	//"github.com/wendal/gor"
+	"gor"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -14,7 +14,7 @@ import (
 )
 
 const (
-	VER = "2.8.6"
+	VER = "3.6.2"
 )
 
 var (

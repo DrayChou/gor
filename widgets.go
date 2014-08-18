@@ -146,7 +146,7 @@ func BuildCustomWidget(name string, dir string, cnf Mapper) (Widget, []string, e
 		return nil, nil, nil
 	}
 
-	layoutFilePath := dir + "/layouts/" + layoutName.(string) + ".html"
+	layoutFilePath := dir + "/layouts/" + layoutName.(string) + ".tmpl"
 	f, err := os.Open(layoutFilePath)
 	if err != nil {
 		return nil, nil, errors.New("Fail to load Widget Layout" + dir + "\n" + err.Error())
